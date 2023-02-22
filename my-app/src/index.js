@@ -3,12 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { AuthContexProvider } from "./context/authContext";
+import { Router } from "react-bootstrap-icons";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <AuthContexProvider>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </AuthContexProvider>
   </React.StrictMode>
 );
